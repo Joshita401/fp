@@ -1,0 +1,39 @@
+<html>
+    <head>
+<title>Family project</title>
+<style>
+    body{
+        text-align: center;
+        background-color:forestgreen ;
+    }
+        p{
+           background-color:greenyellow;
+        }
+    
+</style>
+    </head>
+    <body>
+<h1>My Family Book</h1>
+<img src="family-activities-temperate-deciduous-forests-800x800.jpg">
+
+<h2>Family Member</h2>
+<img id="album" src="mot.webp">
+<br>
+<button type="button"
+              onclick="nextslide()">
+        NEXT </button>
+        <script>
+            var image=[
+                "si.jpg",
+                "f.webp",
+                "gm.jpg",
+                "gp.jpg"
+            ]
+            var i=0;
+function nextslide(){
+  document.getElementById("album").src=image[i];
+  i++;
+}
+        </script>
+    </body>
+</html>
